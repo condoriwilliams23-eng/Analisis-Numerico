@@ -1,83 +1,171 @@
-===========================================================================
-     PORTAFOLIO DE ANÁLISIS NUMÉRICO - UTN FRSF - CURSADA 2025
-===========================================================================
+# Numerical Analysis Portfolio
 
-FACULTAD: Facultad Regional Santa Fe (UTN)
-CÁTEDRA: Análisis Numérico
+UTN – Facultad Regional Santa Fe
+Coursework 2025
 
----------------------------------------------------------------------------
-1. DESCRIPCIÓN GENERAL
----------------------------------------------------------------------------
-Este repositorio contiene la resolución integral de los Trabajos Prácticos 
-de la materia. Se abordan problemas complejos de ingeniería mediante la 
-implementación de algoritmos numéricos en Python y C++, con un fuerte foco 
-en el análisis de convergencia, estabilidad y error computacional.
+## Institution
 
----------------------------------------------------------------------------
-2. RESUMEN DE LOS TRABAJOS PRÁCTICOS
----------------------------------------------------------------------------
+**University:** Universidad Tecnológica Nacional (UTN)
+**Faculty:** Facultad Regional Santa Fe (FRSF)
+**Course:** Numerical Analysis
 
-TP 1: ANÁLISIS DE SEÑALES Y SISTEMAS
-- Enfoque: Resolución de sistemas de ecuaciones y búsqueda de raíces.
-- Herramientas: Implementación de métodos iterativos y directos.
+---
 
-TP 2: ESTEGANOGRAFÍA (LSB Y TF2D)
-- Temas: Procesamiento de imágenes en el dominio espacial y de frecuencia.
-- Implementación: Ocultamiento de mensajes mediante bit menos significativo 
-  (LSB) y modificación de paridad en coeficientes de la TF2D (parámetro delta).
-- Conclusión: Análisis de pérdida de información por error de redondeo.
+# 1. General Description
 
-TP 3: BÚSQUEDA DE RAÍCES EN FUNCIONES NO LINEALES
-- Problema: Cálculo del volumen real de CO2 usando la ecuación de Van der Waals.
-- Algoritmos: Desarrollo de un método basado en la expansión de Taylor hasta 
-  la 2da derivada (Newton de orden superior) combinado con Bisección para 
-  garantizar robustez.
-- Análisis: Comparación de órdenes de convergencia y sensibilidad a valores iniciales.
+This repository contains the complete solutions for the practical assignments developed during the Numerical Analysis course.
 
-TP 4: PROCESAMIENTO DE IMÁGENES Y AJUSTE DE CURVAS
-- Aplicación: Análisis dinámico de una gota de estaño impactando un sustrato.
-- Técnicas: Detección de bordes (Canny/Sobel), ajuste de contornos mediante 
-  Splines cúbicos y polinomios de mínimos cuadrados.
-- Resultados: Cálculo de ángulos de contacto, perímetros y factor de 
-  esparcimiento a partir de secuencias de alta velocidad (20538 fps).
+The projects address complex engineering problems through the implementation of numerical algorithms using **Python and C++**, with a strong focus on:
 
-TP 5: ECUACIONES DIFERENCIALES ORDINARIAS (EDO)
-- Modelado: Simulación del comportamiento dinámico de gotas (oscilador amortiguado).
-- Métodos: Comparativa entre Taylor de orden 3, Runge-Kutta 5-6 y 
-  Predictores-Correctores (Adams-Bashforth-Moulton).
-- Análisis: Evaluación de eficiencia costo-computacional vs. precisión absoluta.
+* convergence analysis
+* numerical stability
+* computational error analysis
 
-TP 6: FLUJO EN MEDIOS POROSOS (ECUACIÓN DE RICHARDS)
-- Desafío: Simulación de transporte de líquidos en papel (redistribución capilar).
-- Modelos: Implementación de difusividad no lineal (Brooks-Corey y Van Genuchten).
-- Simulación: Resolución 1D y 2D (gota elíptica) mediante diferencias finitas 
-  explícitas, analizando la condición de estabilidad CFL.
+---
 
----------------------------------------------------------------------------
-3. TECNOLOGÍAS Y LIBRERÍAS
----------------------------------------------------------------------------
-- Lenguajes: Python (Google Colab), C++ (Qt Framework).
-- Librerías: NumPy (Cálculo), OpenCV (Imágenes), Plotly/Matplotlib (Gráficos), 
-  SciPy (Interpolación).
-- Análisis: Control de errores de truncamiento y redondeo en punto flotante.
+# 2. Practical Assignments Summary
 
----------------------------------------------------------------------------
-4. ENLACES A LOS CÓDIGOS (GOOGLE COLAB)
----------------------------------------------------------------------------
+## TP 1 – Signal and Systems Analysis
 
-🚀 TP 2 - ESTEGANOGRAFÍA:
+**Focus:** Solving systems of equations and root-finding problems.
+
+**Techniques implemented**
+
+* Iterative numerical methods
+* Direct methods for linear systems
+
+---
+
+## TP 2 – Steganography (LSB and TF2D)
+
+**Topics**
+
+* Image processing in spatial and frequency domains
+
+**Implementation**
+
+* Message hiding using Least Significant Bit (LSB)
+* Parity modification in TF2D coefficients using parameter delta
+
+**Conclusion**
+
+* Analysis of information loss caused by rounding errors.
+
+---
+
+## TP 3 – Root Finding in Nonlinear Functions
+
+**Problem**
+
+Computation of the real volume of CO₂ using the **Van der Waals equation**.
+
+**Algorithms**
+
+* Higher-order Newton method based on Taylor expansion up to the second derivative
+* Combination with the **Bisection Method** for robustness
+
+**Analysis**
+
+* Convergence order comparison
+* Sensitivity to initial conditions
+
+---
+
+## TP 4 – Image Processing and Curve Fitting
+
+**Application**
+
+Dynamic analysis of a **tin droplet impacting a substrate**.
+
+**Techniques**
+
+* Edge detection using Sobel and Canny
+* Contour fitting using cubic splines
+* Least squares polynomial approximation
+
+**Results**
+
+* Contact angle estimation
+* Perimeter calculation
+* Spreading factor analysis using high-speed sequences (20538 fps)
+
+---
+
+## TP 5 – Ordinary Differential Equations (ODE)
+
+**Model**
+
+Simulation of droplet dynamics using a damped oscillator model.
+
+**Methods compared**
+
+* Third-order Taylor method
+* Runge-Kutta 5–6
+* Predictor-Corrector methods (Adams–Bashforth–Moulton)
+
+**Analysis**
+
+* Computational cost vs numerical accuracy
+
+---
+
+## TP 6 – Flow in Porous Media (Richards Equation)
+
+**Challenge**
+
+Simulation of liquid transport in paper (capillary redistribution).
+
+**Models implemented**
+
+* Brooks-Corey diffusivity model
+* Van Genuchten model
+
+**Simulation**
+
+* 1D and 2D finite difference solutions
+* Stability analysis using the CFL condition
+
+---
+
+# 3. Technologies and Libraries
+
+**Programming Languages**
+
+* Python (Google Colab)
+* C++ (Qt Framework)
+
+**Libraries**
+
+* NumPy – Numerical computation
+* OpenCV – Image processing
+* Matplotlib / Plotly – Visualization
+* SciPy – Interpolation and numerical methods
+
+**Analysis**
+
+* Truncation error analysis
+* Floating-point rounding error analysis
+
+---
+
+# 4. Code Links (Google Colab)
+
+### TP 2 – Steganography
+
 https://colab.research.google.com/drive/15xi-blam9UT6tYjOGIR0RaDS45aRrcx2?usp=sharing
 
-🚀 TP 3 - BÚSQUEDA DE RAÍCES:
+### TP 3 – Root Finding
+
 https://colab.research.google.com/drive/1tL1KS9Y5E7ZcvndGcN397UFX2SuasiMg?usp=sharing
 
-🚀 TP 4 - AJUSTE Y SPLINES:
+### TP 4 – Curve Fitting and Splines
+
 https://colab.research.google.com/drive/13LCBeTl6Z-oniJhLcmhpXPcP18TSa15d?usp=sharing
 
-🚀 TP 5 - RESOLUCIÓN DE EDOs:
+### TP 5 – Solving ODEs
+
 https://colab.research.google.com/drive/1buBvsYPycUmXyJT7zzKj-L1YNVECIDJT?usp=sharing
 
-🚀 TP 6 - ECUACIÓN DE RICHARDS (2D):
-https://colab.research.google.com/drive/11hAJ4gG9Dlrauhw6PG5tt9BUcnzvBEpr?usp=sharing
+### TP 6 – Richards Equation (2D)
 
-===========================================================================
+https://colab.research.google.com/drive/11hAJ4gG9Dlrauhw6PG5tt9BUcnzvBEpr?usp=sharing
